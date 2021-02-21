@@ -1,0 +1,36 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "ignorePatterns": [
+    "dist"
+  ],
+  "rules": {
+    "brace-style": ["error"],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": ["error"],
+    "curly": ["error", "all"],
+    "dot-notation": ["error"],
+    "eqeqeq": ["error", "smart"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "lines-between-class-members": ["error", "always", {"exceptAfterSingleLine": true}],
+    "max-len": ["error", {"code": 140, "comments": 100, "ignoreTrailingComments": true, "ignoreUrls": true, "ignoreTemplateLiterals": true, "ignoreRegExpLiterals": true}],
+    "no-console": ["error"],  // Require Homebridge logging
+    "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+    "prefer-arrow-callback": ["error"],
+    "quotes": ["error", "single", {"allowTemplateLiterals": true}],
+    "semi": ["error", "always"],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/member-delimiter-style": ["error"],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/semi": ["error"]
+  }
+}

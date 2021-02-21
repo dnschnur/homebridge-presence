@@ -1,0 +1,7 @@
+{
+  "pluginAlias": "presence",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+  }
+}
